@@ -1,10 +1,18 @@
 let textCreate = document.getElementById("text-write")
 
 
+window.onload = () => {
+    
+}
+
+
+
+
+
 
 
 function createWrite(element){
-    textCreate.innerHTML = "Aproveite as melhores ofertas, com produtos incriveis..."
+    textCreate.innerHTML = "Aproveite as melhores ofertas, e venha aprender a programar aqui na coder_vcs...."
     let arr = element.innerHTML.split("")
     element.innerHTML = ""
     arr.forEach((el,id)=>{
@@ -17,7 +25,7 @@ function createWrite(element){
 
 setInterval(() => {
     createWrite(textCreate)
-}, 7200);
+}, 12500);
 
 
 async function getBitcoinPrice() {

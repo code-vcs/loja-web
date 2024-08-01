@@ -8,10 +8,8 @@
 }
 
 body.corp{
-
     overflow-x: hidden;
-
-    background: rgb(37, 37, 40);
+    background: rgb(24, 24, 24);
 }
 img {
     width: 20px;
@@ -22,12 +20,19 @@ img#logo{
     width: 100px;
     height: 100px;
 }
+div.efect-write{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
 h4#text-write{
-    position: absolute;
+    /* position: absolute; */
+    width: 100%;
+    height: 1rem;
     font-family: "Outfit", sans-serif;
+    text-align: center;
     font-size: 12pt;
-    margin-top: 10px;
-    color: rgb(130, 130, 130);
+    color: rgb(197, 197, 197);
 }
 
 
@@ -113,9 +118,50 @@ section div{
     width: 50%;
 }
 
+li:hover{
+    transition: 1s;
+    border-bottom: 4px solid rgb(234, 0, 255);
+}
+
+p{
+    color: rgb(0, 183, 255);
+    margin-left: 20px;
+}
 
 
+main div.row-lay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin: 20px;
+    /* background:url(/public/img/back.png); */
+    background-size: cover;
+}
 
+main.container-lay img{
+    width: 22vmax;
+    height: 20vmax;
+    margin: 12px;
+    border-radius: 10px;
+}
+
+
+div.center-baner{
+    width: 95%;
+    height: auto;
+    text-align: center;
+    margin: 20px;
+}
+
+div.center-baner img{
+    width: 100%;
+    height: 40vmax;
+}
+
+@media (min-width:600px){
+    
+}
 
 
 
