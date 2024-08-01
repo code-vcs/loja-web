@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Outfit:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Kalnia+Glaze:wght@100..700&family=Outfit:wght@100..900&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -10,6 +10,8 @@
 body.corp{
     overflow-x: hidden;
     background: rgb(24, 24, 24);
+    font-family: "Gruppo", sans-serif;
+    font-weight: bolder;
 }
 img {
     width: 20px;
@@ -28,11 +30,16 @@ div.efect-write{
 h4#text-write{
     /* position: absolute; */
     width: 100%;
-    height: 1rem;
+    height: 3rem;
+    margin-bottom: 5rem;
     font-family: "Outfit", sans-serif;
     text-align: center;
-    font-size: 12pt;
-    color: rgb(197, 197, 197);
+    background-image: linear-gradient(to bottom, rgb(135, 53, 218), rgb(134, 169, 197), turquoise);
+    /* color: rgb(244, 0, 0); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -50,8 +57,11 @@ header nav ul li {
     list-style: none;
     margin: 10px;
     color: rgb(68, 129, 194);
-    font-size: 1.1rem;
-    font-family: "Outfit", sans-serif;
+    font-size: 1.4rem;
+    font-family: "Gruppo", sans-serif;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+    /* font-family: "Outfit", sans-serif; */
     /* font-family: "Kalnia Glaze", serif; */
 
 
@@ -60,9 +70,10 @@ header nav ul li {
 
 
 div#container-header {
-    display: flex;
+    width: 100%;
+    /* display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
     animation: 45s slideLeft ease infinite;
 }
 
@@ -170,6 +181,10 @@ div.center-baner img{
         background: black;
         margin: 0px;
     }
+    div#container-header{
+        display: none;
+    }
+
     section{
         display: flex;
         justify-content: center;
@@ -217,6 +232,7 @@ div.center-baner img{
         color: purple;
     }
     h4#text-write{
+        font-size: 12pt;
         color: rgb(208, 2, 208);
 
     }
