@@ -27,7 +27,6 @@ setInterval(() => {
     createWrite(textCreate)
 }, 12500);
 
-
 async function getBitcoinPrice() {
     try {
         const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd');

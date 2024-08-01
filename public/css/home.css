@@ -115,7 +115,12 @@ section{
     justify-content: space-around;
 }
 section div{
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section div input.form-control{
+    width: 60rem;
 }
 
 li:hover{
@@ -159,8 +164,62 @@ div.center-baner img{
     height: 40vmax;
 }
 
-@media (min-width:600px){
-    
+@media (max-width:590px){
+    body.corp{
+        overflow-x: hidden;
+        background: black;
+        margin: 0px;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    section div{
+        display: flex;
+        justify-content: center;
+    }
+    section div input.form-control{
+        width: 100%;
+    }
+    p{
+        text-align: center;
+    }
+    div.row-lay div{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        /* background:red; */
+    }
+    div.row-lay img{
+        width: 94%;
+        height: 10rem;
+
+    }
+    div.center-baner{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        /* background:red; */
+    }
+    div.center-baner img{
+        width: 94%;
+        height: 10rem;
+
+    }
+    header ul{
+        display: none;
+    }
+    div.efect-write{
+        padding: 20px;
+        margin-top: -.3rem;
+        color: purple;
+    }
+    h4#text-write{
+        color: rgb(208, 2, 208);
+
+    }
 }
 
 
