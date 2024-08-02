@@ -1,31 +1,19 @@
-let textCreate = document.getElementById("text-write")
+// let textCreate = document.getElementById("text-write")
 
+// function createWrite(element){
+//     textCreate.innerHTML = "Aproveite as melhores ofertas, e venha aprender a programar aqui na coder_vcs...."
+//     let arr = element.innerHTML.split("")
+//     element.innerHTML = ""
+//     arr.forEach((el,id)=>{
+//         var st = setTimeout(() => {
+//             element.innerHTML += el
+//         }, 127 * id);
+//     })
+// }
 
-window.onload = () => {
-    
-}
-
-
-
-
-
-
-
-function createWrite(element){
-    textCreate.innerHTML = "Aproveite as melhores ofertas, e venha aprender a programar aqui na coder_vcs...."
-    let arr = element.innerHTML.split("")
-    element.innerHTML = ""
-    arr.forEach((el,id)=>{
-        var st = setTimeout(() => {
-            element.innerHTML += el
-        }, 127 * id);
-    })
-}
-
-
-setInterval(() => {
-    createWrite(textCreate)
-}, 12500);
+// setInterval(() => {
+//     createWrite(textCreate)
+// }, 12500);
 
 async function getBitcoinPrice() {
     try {
@@ -43,14 +31,12 @@ async function getBitcoinPrice() {
             img.setAttribute("src",`${el.image}`)
             img.setAttribute("id",`img-${id}`)
             spn.innerHTML =el.symbol + `&nbsp;&nbsp;` +  Number(el.current_price).toFixed(2)
-            // li.innerHTML=el.id
-
+            
             document.querySelector(".list-ul").append(li)
             document.querySelector(`#li-${id}`).append(img)
             document.querySelector(`#li-${id}`).append(spn)
-
-
         })
+        
     } catch (error) {
         console.error('Error fetching Bitcoin price:', error);
         document.getElementById('price').innerText = 'Error loading price';
@@ -58,13 +44,3 @@ async function getBitcoinPrice() {
 }
 
 getBitcoinPrice();
-
-
-document.getElementById("inp-pesquisar").addEventListener("mouseover",()=>{
-    textCreate.hidden = true
-
-})
-document.getElementById("inp-pesquisar").addEventListener("mouseout",()=>{
-    textCreate.hidden = false    
-
-})
